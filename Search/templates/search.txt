@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        {% load static %}
+        <title>Search Page</title>
+        <link rel ="stylesheet" type ="text/css" href ="https://bootswatch.com/yeti/bootstrap.min.css" />
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+        <script src="{% static "js/Site.js" %}"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <h1 class="text-center">Welcome to Book Summary Search</h1>
+        <br>
+        <br>
+        <div class="row">
+        <div class="col-md-4"></div>
+        <div class="col-md-4">
+            <form action="/search" method="post">
+                <div class="form-group text-center">
+                    {% csrf_token %}
+                    {{ form.as_p }}
+                    <input class="form-control btn btn-success" style="width:30%" type="submit" value="Search" />
+                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
+                        Instructions
+                    </button>
+                     <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal2">
+                        Need a book?
+                    </button>
+                </div>
+            </form>
+        </div>
+
+            <!-- Modal -->
+            <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="myModalLabel">Instructions</h4>
+                  </div>
+                  <div class="modal-body">
+                    <ol>
+                        <li>Enter a book title (exact is better)</li>
+                        <li>Get a pen and paper</li>
+                        <li>Click the links, read the content, watch the videos and write down what you learn</li>
+                        <li>Leave a comment and tell me what you think</li>
+                    </ol>
+                    <p>See my study guide for a more effective strategy</p>
+                    <small>Unfortunately some of the book summary sites used do charge.. Try the free trial(s)</small>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+ 
+
+             <div class="modal fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel2">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="myModalLabel2">TAI LOPEZ TOP BOOK RECOMMENDATIONS</h4>
+                  </div>
+                  <div class="modal-body">
+                    <ol>
+                    <li>MANAGING ONESELF BY PETER DRUCKER</li>
+                    <li>EVOLUTIONARY PSYCHOLOGY: THE NEW SCIENCE OF THE MIND BY DAVID BUSS</li>
+                    <li>HOW TO WIN FRIENDS AND INFLUENCE PEOPLE BY DALE CARNEGIE</li>
+                    <li>TOTAL RECALL BY ARNOLD SCHWARZENEGGER</li>
+                    <li>THE SELFISH GENE BY RICHARD DAWKINS</li>
+                    <li>THE LESSONS OF HISTORY BY WILL & ARIEL DURANT</li>
+                    <li>KON-TIKI BY THOR HEYERDAHL</li>
+                    <li>CIVILIZATION AND ITS DISCONTENTS BY SIGMUND FREUD</li>
+                    <li>WHEN I STOP TALKING, YOU'LL KNOW I'M DEAD BY JERRY WEINTRAUB</li>
+                    <li>THE STORY OF THE HUMAN BODY BY DANIEL LIEBERMAN</li>
+                    <li>THE ONE THING BY GARY KELLEr</li>
+                    <li>RIVETED BY JIM DAVIES</li>
+                    <li>THE GREATEST MINDS AND IDEAS OF ALL TIME BY WILL DURANT</li>
+                    <li>THE COMPLETE STORY OF CIVILIZATION BY WILL DURANT</li>
+                    <li>MADE IN AMERICA BY SAM WALTON</li>
+                    <li>THE DECISION BOOK BY MIKAEL KROGERUS</li>
+                    <li>POOR CHARLIE'S ALMANACK: THE WIT AND WISDOM OF CHARLES T. MUNGER BY PETER KAUFMAN</li>
+                    <li>DISRUPT YOU! MASTER PERSONAL TRANSFORMATION, SEIZE OPPORTUNITY, AND THRIVE IN THE ERA OF ENDLESS INNOVATION BY JAY SAMIT</li>
+                    <li>A FEW LESSONS FOR INVESTORS AND MANAGERS BY WARREN BUFFETT</li>
+                    <li>MICHAEL JORDAN: THE LIFE BY ROLAND LAZENBY</li>
+                    <li>ALL QUIET ON THE WESTERN FRONT BY ERICH MARIA REMARQUE</li>
+                    <li>THE HAPPINESS HYPOTHESIS BY JONATHAN HAIDT</li>
+                    <li>SALT SUGAR FAT: HOW THE FOOD GIANTS HOOKED US BY MICHAEL MOSS</li>
+                    <li>AWAKEN THE GIANT WITHIN BY ANTHONY ROBBINS</li>
+                    <li>THE HILTONS: THE TRUE STORY OF AN AMERICAN DYNASTY BY J. RANDY TARABORRELLI</li>
+                    </ol>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+        <div class="col-md-4"></div>
+        </div>
+
+
+

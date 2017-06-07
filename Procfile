@@ -1,0 +1,1 @@
+web: gunicorn BookSummarySearch.wsgi --log-file -
