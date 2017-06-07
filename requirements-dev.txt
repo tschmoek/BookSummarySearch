@@ -27,3 +27,4 @@ rsa==3.4.2
 selenium==3.4.1
 uritemplate==3.0.0
 yarl==0.10.0
+whitenoise==3.3.0
