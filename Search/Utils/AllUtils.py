@@ -43,7 +43,7 @@ class AllUtils(object):
             return results
 
 
-        booklist = query.lower().strip()
+        booklist = [query.lower().strip()]
 
         print('Working on it...')
 
