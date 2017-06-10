@@ -7,9 +7,7 @@ from django import forms
 from Search.Utils.AllUtils import AllUtils
 
 def index(request):
-
-	context = {'tanner',5}
-	return render(request, 'index.html', {})
+	return HttpResponseRedirect('/search')
 
 def search(request):
     if request.method == 'POST':
