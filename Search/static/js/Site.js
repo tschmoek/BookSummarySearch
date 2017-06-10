@@ -21,7 +21,7 @@ $(document).ready(function(){
                 '<div class="col-md-3"></div> '+
                 '<div class="col-md-5">'+
                     '<h3>Good Reads</h3>'+
-                    '<a href='+data.goodlist+'>Link</a>'+
+                    '<a target="_blank" href='+data.goodlist+'>Link</a>'+
                     '<br>'+
                 '</div>'+
             '</div>')
@@ -31,7 +31,7 @@ $(document).ready(function(){
                 '<div class="col-md-3"></div> '+
                 '<div class="col-md-5">'+
                     '<h3>Actionable Books</h3>'+
-                    '<a href='+data.actionlist+'>Link</a>'+
+                    '<a target="_blank" href='+data.actionlist+'>Link</a>'+
                     '<br>'+
                 '</div>'+
             '</div>') 
@@ -41,7 +41,7 @@ $(document).ready(function(){
                 '<div class="col-md-3"></div>'+
                 '<div class="col-md-5">'+
                     '<h3>Four Minute</h3>'+
-                     '<a href='+data.fourmin+'>Link</a>'+
+                     '<a target="_blank" href='+data.fourmin+'>Link</a>'+
                     '<br>'+
                 '</div>'+
             '</div>')
@@ -51,7 +51,7 @@ $(document).ready(function(){
                 '<div class="col-md-3"></div>'+
                 '<div class="col-md-5">'+
                     '<h3>Overdrive Library</h3>'+
-                    '<a href='+data.overdrivelist+'>Link</a>'+
+                    '<a target="_blank" href='+data.overdrivelist+'>Link</a>'+
                     '<br>'+
                 '</div>'+
             '</div>')
@@ -61,7 +61,7 @@ $(document).ready(function(){
                 '<div class="col-md-3"></div>'+
                 '<div class="col-md-5">'+
                     '<h3>Blink</h3>'+
-                    '<a href='+data.blink+'>Link</a>'+
+                    '<a target="_blank" href='+data.blink+'>Link</a>'+
                     '<br>'+
                 '</div>'+
             '</div>')
@@ -72,7 +72,7 @@ $(document).ready(function(){
                 '<div class="col-md-3"></div>'+
                 '<div class="col-md-5">'+
                     '<h3>Biz Summaries</h3>'+
-                    '<a href='+data.bizsum+'>Link</a>'+
+                    '<a target="_blank" href='+data.bizsum+'>Link</a>'+
                     '<br>'+
                 '</div>'+
             '</div>')
@@ -82,7 +82,7 @@ $(document).ready(function(){
            '<div class="col-md-3"></div>'+
                 '<div class="col-md-5">'+
                     '<h3>Kirkus Reviews</h3>'+
-                    '<a href='+data.kirkus+'>Link</a>'+
+                    '<a target="_blank" href='+data.kirkus+'>Link</a>'+
                     '<br>'+
                 '</div>'+
             '</div>')
@@ -92,7 +92,7 @@ $(document).ready(function(){
                 '<div class="col-md-3"></div>'+
                 '<div class="col-md-5">'+
                     '<h3>Read It for Me</h3>'+
-                    '<a href="https://readitfor.me/">Link</a>'+
+                    '<a target="_blank" href="https://readitfor.me/">Link</a>'+
                     '<br>'+
                 '</div>'+
             '</div>')
