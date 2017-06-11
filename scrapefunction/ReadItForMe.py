@@ -28,8 +28,8 @@ class ReadItForMe(object):
 
         username = driver.find_element_by_name("email")
         password = driver.find_element_by_name("password")
-        username.send_keys("tschmoek@gmail.com")
-        password.send_keys("England2012")
+        username.send_keys("")
+        password.send_keys("")
         password.send_keys(Keys.RETURN)
 
         category = WebDriverWait(driver, 15).until(EC.presence_of_element_located((By.ID, "ctg_filter")))

@@ -17,7 +17,7 @@ class YouTube(object):
 
         print('\n Youtube Videos \n')
         
-        DEVELOPER_KEY = "AIzaSyC2AuZ66KtrzM61wX41E7DIGLNa7FMd5H0"
+        DEVELOPER_KEY = ""
         YOUTUBE_API_SERVICE_NAME = "youtube"
         YOUTUBE_API_VERSION = "v3"
         youtube = build(YOUTUBE_API_SERVICE_NAME, YOUTUBE_API_VERSION,
@@ -33,15 +33,9 @@ class YouTube(object):
             ).execute()
 
             videos = []
-
-            # Add each result to the appropriate list, and then display the lists of
-            # matching videos, channels, and playlists.
-
             for search_result in search_response.get("items", []):
                 if search_result["id"]["kind"] == "youtube#video":
                     results.append("https://youtube.com/embed/%s" % (search_result["id"]["videoId"]))
-
-                # print("Videos:\n", "\n".join(videos), "\n")
             
         except HTTPError:
             file.writelines("\n\nAn HTTP error %d occurred:\n%s" %
