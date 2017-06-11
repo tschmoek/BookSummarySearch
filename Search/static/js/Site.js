@@ -108,22 +108,22 @@ $(document).ready(function(){
                 if (data.youtubelist.length == 3){
                     $('#searchResults').append('<div class="row">'+
                         '<h3 class="text-center">Youtube Results</h3>'+
-                        '<div class="col-md-4"><iframe width="95%" height="300px" src='+data.youtubelist[0]+'></iframe></div> '+
-                        '<div class="col-md-4"><iframe width="95%" height="300px" src='+data.youtubelist[1]+'></iframe></div>'+
-                        '<div class="col-md-4"><iframe width="95%" height="300px" src='+data.youtubelist[2]+'></iframe></div>'+
+                        '<div class="col-md-4"><iframe width="100%" height="300px" src='+data.youtubelist[0]+'></iframe></div> '+
+                        '<div class="col-md-4"><iframe width="100%" height="300px" src='+data.youtubelist[1]+'></iframe></div>'+
+                        '<div class="col-md-4"><iframe width="100%" height="300px" src='+data.youtubelist[2]+'></iframe></div>'+
                     '</div>')
                 }
                 if (data.youtubelist.length == 2){
                     $('#searchResults').append('<div class="row">'+
                         '<h3 class="text-center">Youtube Results</h3>'+
-                        '<div class="col-md-4"><iframe width="95%" height="300px" src='+data.youtubelist[0]+'></iframe></div> '+
-                        '<div class="col-md-4"><iframe width="95%" height="300px" src='+data.youtubelist[1]+'></iframe></div>'+
+                        '<div class="col-md-4"><iframe width="100%" height="300px" src='+data.youtubelist[0]+'></iframe></div> '+
+                        '<div class="col-md-4"><iframe width="100%" height="300px" src='+data.youtubelist[1]+'></iframe></div>'+
                     '</div>')
                 }
                 if (data.youtubelist.length == 1){
                     $('#searchResults').append('<div class="row">'+
                         '<h3 class="text-center">Youtube Results</h3>'+
-                        '<div class="col-md-4"><iframe width="95%" height="300px" src='+data.youtubelist[0]+'></iframe></div> '+
+                        '<div class="col-md-4"><iframe width="100%" height="300px" src='+data.youtubelist[0]+'></iframe></div> '+
                     '</div>')
                 }
             }
