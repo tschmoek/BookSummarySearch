@@ -7,9 +7,12 @@ $(document).ready(function(){
             $('#id_searchval').appendTo('<br><span class="help-inline">Something may have gone wrong</span>')
             return
         }
+        if ($('#searchResults'))
+            $('#searchResults').empty()
+        $(".sk-fading-circle").fadeIn(1000)
+
         $.get("/searchQuery/" + query, function(data, status){
-            if ($('#searchResults'))
-                $('#searchResults').empty()
+            $(".sk-fading-circle").hide()
             if(data.RegexError){
                 $('#searchResults').append('<div class="has-error">'+data.RegexError+'</div>')
             }
@@ -124,6 +127,8 @@ $(document).ready(function(){
                     '</div>')
                 }
             }
+            
+
             });
         });
 });
