@@ -3,7 +3,6 @@ $(document).ready(function(){
     $('#test').click(function(e) {
         var query = $('#id_searchval').val()
         if(!query){
-            console.log('EMPTY')
             $('#id_searchval').appendTo('<br><span class="help-inline">Something may have gone wrong</span>')
             return
         }
@@ -102,9 +101,6 @@ $(document).ready(function(){
             }
 
             if (data.youtubelist != null){
-                // data.youtubelist.forEach(function(element) {
-                //     console.log(element)
-                // }, this);
                 if (data.youtubelist.length == 3){
                     $('#searchResults').append('<div class="row">'+
                         '<h3 class="text-center">Youtube Results</h3>'+
